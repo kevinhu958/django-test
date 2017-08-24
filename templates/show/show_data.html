@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}
+    my showdata
+{% endblock %}
+
+{% block content %}
+    <p>{{ name }}</p>
+    {% for d in message %}
+        <h5>{{ d }}</h5>
+    {% endfor %}
+{% endblock %}
